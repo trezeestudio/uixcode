@@ -10,14 +10,51 @@ A stunning and functional retractable sidebar for Next.js built on top of [shadc
 - Grouped menu with labels
 - Collapsible submenu
 - Extracted menu items list
+- Dark/Light theme support
+- SEO optimized with OpenGraph and Twitter cards
+- Advanced UI components (avatars, dropdowns, tooltips)
+- State management with Zustand
+- Form validation with Zod
 
-## Tech/framework used
+## Project Structure
 
-- Next.js 14
-- Shadcn/ui
-- Tailwind CSS
+```
+src/
+├── app/               # Next.js routes and pages
+├── components/        # Reusable UI components
+├── hooks/            # Custom React hooks
+└── lib/              # Utilities and configurations
+
+public/              # Static assets
+registry/            # Component registry
+scripts/             # Utility scripts
+```
+
+## Tech Stack
+
+### Core Technologies
+- Next.js 14.2.3
+- React 18
 - TypeScript
-- Zustand
+- Tailwind CSS
+
+### UI Components
+- Shadcn/ui
+- Radix UI components
+- Tailwind CSS animations
+
+### State Management & Utilities
+- Zustand for state management
+- Zod for schema validation
+- next-themes for theme management
+- class-variance-authority for component variants
+- clsx & tailwind-merge for class utilities
+
+### Development Tools
+- ESLint for code linting
+- PostCSS for CSS processing
+- TypeScript for static typing
+- Custom Tailwind configuration
 
 ## Installation
 
@@ -78,6 +115,14 @@ export default function Page() {
    ```bash
    npm run dev
    ```
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build production bundle
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run registry:build` - Build component registry
 
 ## Demo
 

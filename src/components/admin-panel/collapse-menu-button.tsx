@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown, Dot, LucideIcon } from "lucide-react";
+import { Dot, LucideIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -27,6 +27,7 @@ import {
   DropdownMenuSeparator
 } from "@/components/ui/dropdown-menu";
 import { usePathname } from "next/navigation";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 type Submenu = {
   href: string;
@@ -93,7 +94,7 @@ export function CollapseMenuButton({
                   : "-translate-x-96 opacity-0"
               )}
             >
-              <ChevronDown
+              <ChevronDownIcon
                 size={18}
                 className="transition-transform duration-200"
               />

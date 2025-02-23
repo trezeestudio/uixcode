@@ -1,12 +1,13 @@
 import {
   Tag,
   Users,
-  Settings,
   Bookmark,
   SquarePen,
   LayoutGrid,
-  LucideIcon
+  LucideIcon,
+  Settings
 } from "lucide-react";
+import { GearIcon } from "@radix-ui/react-icons";
 
 type Submenu = {
   href: string;
